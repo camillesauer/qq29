@@ -1,0 +1,20 @@
+<div class="menu">
+  <div class="logo-qq">
+    <%= link_to(image_tag("QCDN-LOGO-DEF_Plan de travail 1.png", alt: "Quelque chose de neuf"), root_path) %>
+  </div>
+
+  <div class="menu-text">
+    <%= link_to 'Accueil', root_path %>
+    <%= link_to 'Projets', articles_path %>
+    <%= link_to 'Équipe', teams_path %>
+  </div>
+    <% if user_signed_in? %>
+        <div class="lock-item">
+        <%= link_to(image_tag("lock.png", alt: "Gust - all rights reserved."), destroy_user_session_path, method: :delete) %>
+        </div>
+      <% else %>
+        <div class="lock-item">
+        <%= link_to(image_tag("lock-3.png", alt: "Gust - all rights reserved."), new_user_session_path) %>
+        </div>
+  <% end %>
+</div>
