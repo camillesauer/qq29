@@ -1,3 +1,816 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.avatar {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.avatar-large img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 20px;
+  text-align: center !important;
+}
+
+.color-div-avatar-red{
+  background-color:red;
+  border-radius:20px;
+  margin:30px;
+  box-shadow: -2px 1px 9px 1px rgba(0,0,0,0.28);
+}
+
+.color-div-avatar-white{
+  background-color:white;
+  border-radius:20px;
+  margin:30px;
+  box-shadow: -2px 1px 9px 1px rgba(0,0,0,0.28);
+}
+
+.avatar-bordered {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+
+.avatar-square {
+  width: 40px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+  border: white 1px solid;
+}
+
+.menu-text{
+  font-family: 'Cabin', sans-serif;
+  display:flex;
+}
+
+.container-banner img{
+width: 500px;
+margin-bottom: 20px;
+}
+
+
+@media screen and (max-width: 3000px) {
+.display-grid-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and  (max-width: 2000px) {
+.display-grid-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (max-width: 1300px){
+.display-grid-card{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+}
+
+@media (min-width: 200px) {
+.display-grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+}
+
+@media (min-width: 1200px) {
+.display-grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media (min-width: 1400px) {
+.display-grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media (min-width: 1600px) {
+.display-grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media (min-width: 2000px) {
+.display-grid-avatar{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+}
+
+.flex-admin a {
+  display: flex !important;
+  justify-content: space-between !important;
+  font-family: 'Cabin', sans-serif;
+  font-size: 15px;
+  color:red;
+}
+
+.flex-admin-deux a {
+  display: flex !important;
+  justify-content: space-between !important;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color:white;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flex-admin-trois a {
+  display: flex !important;
+  justify-content: space-between !important;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color:red;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.flex-admin-trois a:hover {
+  display: flex !important;
+  justify-content: space-between !important;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color:black;
+  text-decoration:none;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.flex-admin-deux a:hover {
+  display: flex !important;
+  justify-content: space-between !important;
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color:black;
+  text-decoration:none;
+  font-weight: bold;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-avatar-center-r{
+margin-left:100px;
+padding-top: 50px;
+text-align:center;
+color:red;
+font-family: 'Cabin', sans-serif;
+font-size: 40px;
+}
+
+.text-avatar-center-w{
+margin-left:100px;
+padding-top: 50px;
+text-align:center;
+color:white;
+font-family: 'Cabin', sans-serif;
+font-size: 40px;
+}
+
+@media (max-width: 800px) {
+.text-avatar-center-w{
+margin-left:0px;
+}
+}
+
+@media (max-width: 800px) {
+.text-avatar-center-r{
+margin-left:0px;
+}
+}
+
+.display-flex-info{
+  display: flex !important;
+  font-family: 'Cabin', sans-serif;
+  font-size: 18px;
+  color:red;
+}
+
+.card-trip {
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  width: 570px;
+  margin: 40px;
+  box-shadow: -2px 1px 9px 1px rgba(0,0,0,0.28)
+}
+
+.card-trip-avatar {
+  width: 250px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  margin: 80px;
+
+}
+
+.url-red a{
+color:red;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius:10px;
+}
+
+.display-bubble h3{
+  font-family: 'Cabin', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align:center;
+  margin-top:20px;
+}
+
+.card-trip a {
+
+  border-radius:5px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  margin: 10px;
+  text-align:center;
+
+}
+
+.card-trip a:hover {
+
+  border-radius:5px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  margin: 10px;
+  text-decoration:none;
+  text-align:center;
+
+}
+
+.form-inputs textarea{
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    border: solid red;
+  }
+
+.form-inputs label{
+    font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  }
+
+
+.conseil{
+  text-align:center;
+  width:400px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  }
+
+.card-trip-plus a {
+
+  border-radius:5px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  width: 215px;
+  height: 65px;
+  color: red;
+  margin:0px;
+  padding: 10px;
+  text-align:center;
+  background: linear-gradient( white);
+  transition: background 0.3s ease;
+  border: 1px solid #E1E1E1;
+}
+
+
+.card-trip-plus a:hover {
+  color: white;
+  box-shadow: -2px 1px 9px 1px rgba(0,0,0,0.28);
+  padding: 10px;
+  text-align:center;
+  text-decoration: none;
+  background-color: red;
+
+}
+
+
+.card-trip h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  color:black;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card-trip h3 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 16px;
+  color:black;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.card-trip p {
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  color:black;
+  opacity: .7;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.card-trip h4 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    color: black;
+    opacity: .7;
+    margin: 0;
+    text-align: right;
+    margin-bottom: 20px;
+    margin-right: 5px;
+  }
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos-deux{
+   position: absolute;
+   top: 100px;
+   left: 50px;
+   color: white;
+   width: 100%;
+}
+
+.card-trip-infos-deux h2{
+  font-family: 'Cabin', sans-serif;
+   font-weight: bold;
+    font-size: 48px;
+    line-height: 50px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+.card-trip-infos-deux h3{
+  font-family: 'Cabin', sans-serif;
+   font-weight: bold;
+    font-size: 32px;
+    line-height: 50px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+.card-trip-infos-deux p{
+  font-family: 'Cabin', sans-serif;
+font-size: 24px;
+line-height: 25px;
+text-shadow: 1px 1px 3px rgba(0,0,0,1);
+}
+
+.img-diapo{
+  position: relative !important;
+  width: 100% !important;
+  height:700px !important;
+  object-fit:cover !important;
+  opacity: 10 !important;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}
+.texte-absolute{
+  position: absolute;
+  width: 316px;
+  height: 78px;
+  left: 198px;
+  top: 836px;
+  font-size: 20px;
+  font-family: 'Cabin', sans-serif;
+  color: white;
+}
+
+
+.image-card-article img{
+  width: 500px;
+  height: 300px;
+  border-radius:10px;
+  object-fit:cover;
+  position:relative;
+}
+
+
+.container-banner{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+
+}
+
+.img-back img{
+width: 30px;
+margin-bottom: 20px;
+}
+
+.img-back-blanc img{
+width: 25px;
+    margin-bottom: 20px;
+    color: white;
+    margin: 30px;
+}
+
+.lock-item img{
+  width:30px !important;
+}
+
+.btn-banner{
+  font-size: 20px;
+font-family: 'Cabin', sans-serif;
+font-weight:bold;
+}
+
+
+.menu-text a{
+  margin: 20px;
+  color: black;
+  font-size: 22px;
+}
+
+.menu-text a:hover{
+  font-weight: bold;
+  text-decoration: none;
+  color: red;
+}
+
+.menu {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.logo-qq img {
+width: 90px;
+height: auto;
+}
+
+.display-info-article-show{
+  display:flex;
+}
+
+.display-info-article-show p{
+margin: 10px
+}
+
+.img_article_show img{
+width: 845px;
+height: auto;
+border-radius: 10px;
+margin: 30px;
+}
+
+@media (max-width: 800px) {
+.img_article_show img{
+width: 645px;
+height: auto;
+border-radius: 10px;
+margin: 30px;
+}
+}
+
+
+@media (max-width: 800px) {
+.card-article-show{
+width: 710px !important;
+
+}
+}
+
+
+@media (max-width: 800px) {
+.center-div-2 p{
+width: 645px !important;
+}
+}
+
+
+.center-div{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.center-div-2{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  flex-direction:column;
+}
+
+.feature {
+  margin-left: 80px !important;
+}
+
+.center-div-2 p{
+  font-size: 18px;
+  line-height: 30px;
+  font-family: 'Cabin', sans-serif;
+  color: black;
+  width: 800px;
+}
+
+
+.card-article-show{
+  width: 1063px;
+  height: auto;
+  left: 188px;
+  top: 98px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.footer {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  padding: 0px 50px;
+  color: white;
+  margin-top: 30px;
+
+}
+
+.sous-section-1 img{
+width: 120px;
+height: auto;
+margin:20px;
+
+}
+
+.display-section-2{
+  background-color: red;
+  padding: 40px;
+  display:flex;
+  width: auto;
+  justify-content:space-between;
+}
+
+
+@media screen and (max-width: 3000px){
+.display-section-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+}
+
+@media screen and (max-width: 1600px){
+.display-section-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+}
+
+
+
+@media (max-width: 800px) {
+.display-section-2 {
+   display:flex;
+   flex-direction:column;
+  justify-items: center;
+
+}
+}
+
+
+@media (max-width: 600px) {
+.container-ok{
+width:500px !important;
+
+}
+}
+
+@media (max-width: 600px) {
+.card-article-show{
+width:450px !important;
+
+}
+}
+
+@media (max-width: 600px) {
+.img_article_show img{
+width:430px !important;
+
+}
+}
+
+@media (max-width: 600px) {
+.center-div-2 p{
+width:390px !important;
+
+}
+}
+
+@media (max-width: 800px) {
+.feature{
+margin-left:0px !important;
+
+}
+}
+
+@media (max-width: 600px) {
+.container-banner img {
+    width: 431px;
+}}
+
+@media (max-width: 600px) {
+.menu{
+ padding-left: 5px;
+
+}
+}
+
+@media (max-width: 600px) {
+.card-trip{
+  width: 400px;
+
+}
+}
+
+
+
+@media (max-width: 600px) {
+.display-section-2-resp {
+   display:flex;
+   flex-direction:column;
+  justify-items: center;
+
+}
+}
+
+@media (max-width: 800px) {
+.paraph-site {
+   margin-right:0px !important;
+   width:400px;
+}
+}
+
+@media (max-width: 800px) {
+.img-section-1-resp {
+  margin: auto;
+  margin-bottom:60px;
+
+  height:300px;
+  border-radius: 10px;
+  object-fit: cover;
+  text-align:center;
+}
+}
+
+
+@media (max-width: 600px) {
+.banner-resp{
+  width: 500px;
+}}
+
+
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+
+}
+
+.banner{
+  height: 500px;
+  padding: 100px 0 !important;
+}
+
+
+@media (min-width: 801px) {
+.img-section-1{
+margin: 30px;
+width: 853px;
+object-fit: cover;
+border-radius: 10px;
+height:500px;
+}
+}
+
+.title-section-2{
+font-size: 20px;
+font-family: 'Cabin', sans-serif;
+color: white;
+margin: 10px;
+text-align: center;
+}
+
+.title-section-2B{
+font-size: 20px;
+font-family: 'Cabin', sans-serif;
+color: white;
+margin: 10px;
+text-align: center;
+width: 200px;
+}
+
+.title-section-2C{
+font-size: 20px;
+font-family: 'Cabin', sans-serif;
+color: white;
+margin: 10px;
+text-align: center;
+width: 200px;
+}
+
+.sous-section-1{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.paraph-site{
+  color: red;
+  font-size: 20px;
+
+  line-height: 37px;
+}
+
+.text-div{
+  padding: 30px;
+  margin: 30px;
+}
+
+
+.title-site{
+font-family: 'Cabin', sans-serif;
+font-weight: bold;
+font-size: 50px;
+margin-bottom: 30px;
+color:red;
+}
+
+.footer img {
+width: 50px;
+height: auto;
+margin:20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&display=swap');

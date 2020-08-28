@@ -1,0 +1,354 @@
+<div class="container-ok">
+<%= render "components/header" %>
+
+<% if user_signed_in? %>
+<div class="flex-admin-trois"><%= link_to "Ajouter une catégorie", new_category_path %></div>
+<% end %>
+
+<% if user_signed_in? %>
+<div class="flex-admin-trois"><%= link_to "Ajouter un avatar", new_avatar_path %></div>
+<% end %>
+
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Bureau Exécutif</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Bureau exécutif" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-white">
+  <h1 class="text-avatar-center-r">Production</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Production" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Mécénat & Partenariat</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Mécénat" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-white">
+  <h1 class="text-avatar-center-r">Médiation</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Médiation" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Relation presse</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Relation presse" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-white">
+  <h1 class="text-avatar-center-r">Scénographie</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Scénographie" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Communication</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Communication" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-white">
+  <h1 class="text-avatar-center-r">Photo</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Photo" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Vidéo</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Vidéo" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-white">
+  <h1 class="text-avatar-center-r">Lumière</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Lumière" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+
+<div class="color-div-avatar-red">
+  <h1 class="text-avatar-center-w">Son</h1>
+<div class="display-grid-avatar">
+    <% category= "" %>
+    <% Avatar.order(:category_id).each do |avatar| %>
+      <% if avatar.category_id == "Son" %>
+
+          <div class="card-trip card-trip-avatar ">
+            <% if user_signed_in? %>
+              <div class ="flex-admin">
+                <%= link_to 'Supprimer', avatar_path(avatar),
+                  method: :delete,
+                  data: { confirm: 'Êtes-vous certain de vouloir supprimer?' } %>
+                <%= link_to "Editer", edit_avatar_path(avatar.id)%>
+              </div>
+          <% end %>
+          <div class="avatar-large" alt="avatar-large"> <%= image_tag("#{avatar.img_url}") %> </div>
+
+
+                <h2><%= avatar.prenom %>&nbsp;<%= avatar.nom %></h2>
+                <p><%= avatar.role %></p>
+                <%= link_to "En savoir plus", avatar.bio_url %>
+
+
+
+        </div>
+        <% end %>
+         <% end %>
+</div>
+</div>
+<%= render "components/footer" %>
+</div>
