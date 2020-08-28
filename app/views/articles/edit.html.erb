@@ -1,1 +1,25 @@
-edit.html.erb
+<div class="container-ok">
+  <div class="d-flex container justify-content-center display-bubble">
+   <h3 class="title-new">Ajouter un article</h3>
+
+
+    <%= simple_form_for(@article) do |f| %>
+         <%= f.error_notification %>
+         <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+         <div class="form-inputs">
+           <%= f.input :title %>
+           <%= f.input :sous_titre %>
+           <%= f.input :date %>
+           <%= f.input :lieu %>
+           <%= f.input :image_url %>
+           <%= f.input :content %>
+
+         </div>
+
+         <div class="form-actions">
+           <%= f.submit "Save changes", class: "btn btn-primary" %>
+         </div>
+       <% end %>
+</div>
+</div>

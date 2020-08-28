@@ -1,1 +1,37 @@
-show.html.erbb
+<div class="container-ok">
+<%= render "components/header" %>
+<body style="background-color:#FF0000;">
+<div class="center-div">
+<div class="card-article-show">
+<div class="article_info img_article_show">
+  <h1 class="feature"><%= @article.title %></h1>
+  <h2 class="feature"><%= @article.sous_titre %></h2>
+<div class="display-info-article-show">
+  <p class="feature"><%= @article.date %></p>
+  <p>-</p>
+  <p><%= @article.lieu %></p>
+</div>
+<div class="center-div-2">
+  <%= image_tag("#{@article.image_url}") %>
+  <p><%= @article.content %></p>
+  <%= image_tag("#{@article.image_url_2}") %>
+  <p><%= @article.content_2 %></p>
+  <%= image_tag("#{@article.image_url_3}") %>
+  <p><%= @article.content_3 %></p>
+  <%= image_tag("#{@article.image_url_4}") %>
+  <p><%= @article.content_4 %></p>
+  <%= image_tag("#{@article.image_url_5}") %>
+  <p><%= @article.content_5 %></p>
+  <%= image_tag("#{@article.image_url_6}") %>
+  <%= image_tag("#{@article.image_url_7}") %>
+  <%= image_tag("#{@article.image_url_8}") %>
+  <%= image_tag("#{@article.image_url_9}") %>
+  <%= image_tag("#{@article.image_url_10}") %>
+</div>
+</div>
+</div>
+</div>
+
+<%= render "components/footer" %>
+</body>
+</div>
