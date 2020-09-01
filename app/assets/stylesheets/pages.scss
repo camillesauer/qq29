@@ -90,12 +90,43 @@ opacity: 1 !important;
 }
 }
 
-@media (min-width: 800px) {
+.menu-resp{
+  margin-left: 200px
+}
+
+.menu-resp a{
+  color:black;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+.menu-resp button{
+  color:white;
+  background-color: red;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+
+.menu-resp button:hover{
+  color:white;
+  background-color: red;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+.menu-resp a:hover{
+  color:red;
+  font-weight:bold;
+  font-family: Cabin, sans-serif;
+}
+
+@media (min-width: 550px) {
 .menu-resp{
   display:none;
 }}
 
-@media (max-width: 800px) {
+@media (max-width: 550px) {
 .menu-text{
   display:none;
 }}

@@ -10,8 +10,10 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    @article.save
+    if @avatar.save!
     redirect_to articles_path(@article)
+    end
+
     # Will raise ActiveModel::ForbiddenAttributesError
   end
 
