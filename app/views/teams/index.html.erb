@@ -17,7 +17,7 @@
     <% Avatar.order(:category_id).each do |avatar| %>
       <% if avatar.category.name == "Bureau exécutif" %>
 
-          <div class="card-trip card-trip-avatar ">
+          <div class="card-trip-cinq card-trip-avatar ">
             <% if user_signed_in? %>
               <div class ="flex-admin">
                 <%= link_to 'Supprimer', avatar_path(avatar),
@@ -46,7 +46,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Production" %>
+      <% if avatar.category.name == "Production" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -77,7 +77,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Mécénat" %>
+      <% if avatar.category.name == "Mécénat" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -108,7 +108,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Médiation" %>
+      <% if avatar.category.name == "Médiation" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -139,7 +139,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Relation presse" %>
+      <% if avatar.category.name == "Relation presse" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -201,7 +201,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Communication" %>
+      <% if avatar.category.name == "Communication" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -232,7 +232,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Photo" %>
+      <% if avatar.category.name == "Photo" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -263,7 +263,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Vidéo" %>
+      <% if avatar.category.name == "Vidéo" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -294,7 +294,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Lumière" %>
+      <% if avatar.category.name == "Lumière" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -325,7 +325,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Son" %>
+      <% if avatar.category.name == "Son" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>

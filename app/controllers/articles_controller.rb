@@ -1,11 +1,11 @@
 class ArticlesController < ApplicationController
   def index
-   @article = Article.all
+   @article =  Article.order(id: :desc)
+
   end
 
   def new
     @article = Article.new # needed to instantiate the form_for
-
   end
 
   def create

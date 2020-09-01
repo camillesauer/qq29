@@ -12,9 +12,16 @@
   <p><%= @article.lieu %></p>
 </div>
 <div class="center-div-2">
+
   <%= image_tag("#{@article.image_url}") %>
   <h5><%= @article.legend %></h5>
   <p><%= @article.content %></p>
+  <iframe width="845" height="560"
+    src= <%= @article.video %>
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
   <%= image_tag("#{@article.image_url_2}") %>
   <h5><%= @article.legend_2 %></h5>
   <p><%= @article.content_2 %></p>
