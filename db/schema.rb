@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_28_165825) do
+ActiveRecord::Schema.define(version: 2020_09_01_135942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,17 @@ ActiveRecord::Schema.define(version: 2020_08_28_165825) do
     t.text "image_url_8"
     t.text "image_url_9"
     t.text "image_url_10"
+    t.text "video"
+    t.text "legend"
+    t.text "legend_2"
+    t.text "legend_3"
+    t.text "legend_4"
+    t.text "legend_5"
+    t.text "legend_6"
+    t.text "legend_7"
+    t.text "legend_8"
+    t.text "legend_9"
+    t.text "legend_10"
   end
 
   create_table "avatars", force: :cascade do |t|

@@ -38,6 +38,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :sous_titre, :lieu, :date, :image_url, :content, :image_url_2, :content_2, :image_url_3, :content_3, :image_url_4, :content_4, :image_url_5, :content_5, :image_url_6, :image_url_7, :image_url_8, :image_url_9, :image_url_10)
+    params.require(:article).permit(:title, :sous_titre, :lieu, :date, :image_url, :content, :image_url_2, :content_2, :image_url_3, :content_3, :image_url_4, :content_4, :image_url_5, :content_5, :image_url_6, :image_url_7, :image_url_8, :image_url_9, :image_url_10, :legend, :legend_1, :legend_2, :legend_3, :legend_4, :legend_5, :legend_6, :legend_7, :legend_8, :legend_9, :legend_10, :video)
   end
 end
