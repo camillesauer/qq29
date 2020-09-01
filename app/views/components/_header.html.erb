@@ -8,6 +8,21 @@
     <%= link_to 'Projets', articles_path %>
     <%= link_to 'Équipe', teams_path %>
   </div>
+
+
+<div class="menu-resp">
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Menu
+  </button>
+  <div class="dropdown-menu">
+    <li class="dropdown-item"><%= link_to 'Accueil', root_path %></li>
+        <li class="dropdown-item"><%= link_to 'Projets', articles_path %></li>
+        <li class="dropdown-item"><%= link_to 'Équipe', teams_path %></li>
+  </div>
+</div>
+</div>
+
     <% if user_signed_in? %>
         <div class="lock-item">
         <%= link_to(image_tag("lock.png", alt: "Gust - all rights reserved."), destroy_user_session_path, method: :delete) %>
@@ -17,4 +32,6 @@
         <%= link_to(image_tag("lock-3.png", alt: "Gust - all rights reserved."), new_user_session_path) %>
         </div>
   <% end %>
+
 </div>
+
