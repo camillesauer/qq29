@@ -15,7 +15,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Bureau exécutif" %>
+      <% if avatar.category.name == "Bureau exécutif" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
@@ -170,7 +170,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category_id == "Scénographie" %>
+      <% if avatar.category.name == "Scénographie" %>
 
           <div class="card-trip card-trip-avatar ">
             <% if user_signed_in? %>
