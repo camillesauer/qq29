@@ -1,9 +1,10 @@
 <div class="container-ok">
 <%= render "components/header" %>
-<body style="background-color:#FF0000;">
+
 <!--Carousel Wrapper-->
-<div class="img-back-blanc"><%= link_to(image_tag("cc.png", alt: "Gust - all rights reserved."), root_path) %></div>
+<div class="img-back-blanc"><%= link_to(image_tag("back.png", alt: "Gust - all rights reserved."), root_path) %></div>
 <div id="carousel-example-1z" class="carousel slide carousel-fade carousel-bottom" data-ride="carousel">
+
   <!--Indicators-->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
@@ -13,20 +14,26 @@
   <!--/.Indicators-->
   <!--Slides-->
   <div class="carousel-inner" role="listbox">
+
     <!--First slide-->
-    <div class="carousel-item active">
+
+    <div class="carousel-item active ">
+
+      <div><div class="overlay"></div></div>
       <img class="d-block w-100 img-diapo" src="https://res.cloudinary.com/dntdrod1i/image/upload/v1598518672/Banni%C3%A8re-projet/Capture_d_%C3%A9cran_2020-08-27_%C3%A0_10.52.54_o6usnr.png"
         alt="First slide">
-        <div class="card-trip-infos-deux">
+        <div class="hero card-trip-infos-deux">
+
         <h3>Prochainement</h3>
         <h2>ELLES</h2>
         <h3>Nina Cholet & Clothilde Matta</h3>
         <p>09/20 - Paris</p>
+
       </div>
     </div>
     <!--/First slide-->
     <!--Second slide-->
-    <div class="carousel-item">
+    <div class="carousel-item overlay">
       <img class="d-block w-100 img-diapo" src="https://mdbootstrap.com/img/Photos/Slides/img%20(129).jpg"
         alt="Second slide">
       <div class="card-trip-infos-deux">
@@ -62,7 +69,7 @@
 </div>
 
 <% if user_signed_in? %>
-<div class="flex-admin-deux"><%= link_to "Ajouter", new_article_path %></div>
+<div class="flex-admin-deux"><%= link_to "Ajouter un article", new_article_path %></div>
 <% end %>
 
 <div class="display-grid-card">
@@ -94,5 +101,5 @@
 </div>
 
 <%= render "components/footer" %>
-</body>
+
 </div>
