@@ -1140,7 +1140,7 @@ margin-left:0px !important;
 }
 }
 
-@media (max-width: 650px) {
+@media only (min-width: 500px) and (max-width: 650px) {
 .card-trip{
   width: 400px;
   margin:10px;
