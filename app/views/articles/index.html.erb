@@ -103,7 +103,8 @@
           </div>
           <div class="card-trip-plus">
             <h4 class="card-trip-pricing"><%= article.date %></h4>
-            <%= link_to "En savoir plus", article_path(article.id)%>
+            <div class="btn-desk"><%= link_to "En savoir plus", article_path(article.id)%></div>
+            <div class="btn-resp"><%= link_to "+", article_path(article.id)%></div>
             </div>
         </div>
 
