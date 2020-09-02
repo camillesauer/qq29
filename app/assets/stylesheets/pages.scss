@@ -345,21 +345,58 @@ color:red;
 
 }
 
+.field input{
+      text-align: center;
+      height: auto;
+
+    border-radius: 10px;
+    border: solid red;
+}
+
+.field label{
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+
+
+@media (max-width: 499px) {
+.form-inputs textarea{
+    height: auto;
+    width: 300px;
+    border-radius: 10px;
+    border: solid red;
+  }}
+
+@media (min-width: 500px) {
 .form-inputs textarea{
     height: auto;
     width: 400px;
     border-radius: 10px;
     border: solid red;
-  }
+  }}
 
 .form-inputs label{
-    font-family: 'Cabin', sans-serif;
+  font-family: 'Cabin', sans-serif;
   font-size: 14px;
   font-weight: bold;
   color: red;
   }
 
+@media (max-width: 499px) {
+.conseil{
+  text-align:center;
+  width:300px;
+  font-family: 'Cabin', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: red;
+  }}
 
+
+@media (min-width: 500px) {
 .conseil{
   text-align:center;
   width:400px;
@@ -367,7 +404,7 @@ color:red;
   font-size: 14px;
   font-weight: bold;
   color: red;
-  }
+  }}
 
 .card-trip-plus a {
 
@@ -1160,6 +1197,7 @@ margin-left:0px !important;
     width: 300px;
 
 }}
+
 
 
 @media (max-width: 600px) {
