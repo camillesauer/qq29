@@ -80,6 +80,12 @@ test:
 #
 production:
   <<: *default
-  database: qq29_production
-  username: qq29
-  password: <%= ENV['QQ29_DATABASE_PASSWORD'] %>
+  database: dafdlh9b7min26
+  username: skdctmsyepwxrs
+  password: 7eacf32ad3270e456bc62751bf93a95640a72bac34ed01baeacf478c71a93c21
+  host: ec2-176-34-123-50.eu-west-1.compute.amazonaws.com
+  adapter: postgresql
+  port: 5432
+  DATABASE_URL=: postgres://ovjeihamqkhdik:7eacf32ad3270e456bc62751bf93a95640a72bac34ed01baeacf478c71a93c21@ec2-176-34-123-50.eu-west-1.compute.amazonaws.com:5432/dafdlh9b7min26
+
+
