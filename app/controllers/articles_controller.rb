@@ -10,7 +10,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article = Article.new(article_params)
-    if @avatar.save!
+    if @article.save!
     redirect_to articles_path(@article)
     end
 
