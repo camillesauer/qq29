@@ -1,5 +1,6 @@
 <div class="container-ok">
 <%= render "components/header" %>
+<div class="img-back-blanc"><%= link_to(image_tag("back.png", alt: "QQ29 - all rights reserved."), root_path) %></div>
 
 <% if user_signed_in? %>
 <div class="flex-admin-trois"><%= link_to "Ajouter une catégorie", new_category_path %></div>

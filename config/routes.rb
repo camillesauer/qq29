@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   resources :avatars, only: [:new, :create, :show, :update, :edit, :destroy]
   resources :teams, only: [:index]
   resources :categories
+  get    '/mentions'      => 'pages#mentions'
 end
