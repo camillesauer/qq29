@@ -21,7 +21,7 @@ class AvatarsController < ApplicationController
   def update
     @avatar = Avatar.find(params[:id])
     @avatar.update(avatar_params)
-    redirect_to avatar_path(@avatar)
+    redirect_to teams_path
   end
 
   def destroy
