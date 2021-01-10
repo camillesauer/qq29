@@ -233,7 +233,7 @@
 <div class="display-grid-avatar">
     <% category= "" %>
     <% Avatar.order(:category_id).each do |avatar| %>
-      <% if avatar.category.name == "Photo" %>
+      <% if avatar.category.name == "Photographie" %>
 
           <div class="card-trip-cinq card-trip-avatar ">
             <% if user_signed_in? %>
